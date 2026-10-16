@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main class="tarjeta">
+    <h1>Análisis</h1>
+    <form action="">
+        <label for="archivo">Selecciona un archivo: </label><br>
+        <input type="file" id="archivo" accept=".csv">
+    </form>
+    <div class="controles">
+    <input type="text" id="textoFiltro" placeholder="Buscar...">
+    <button type="button" id="btnFiltrar">
+        <i class="fa-solid fa-filter"></i>
+    </button>
+    <select name="selColumna" id="selColumna"></select>
+    <button type="button" id="calcular">Calcular</button>
+    </div>
+    <div id="tabla"></div>
+    <div id="resultados"></div>
+    </main>
+    <button type="button" id="reporte">Generar Reporte</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="js.js"></script>
+
+</body>
+</html>
